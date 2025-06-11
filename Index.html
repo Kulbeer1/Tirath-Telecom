@@ -12,23 +12,116 @@
   href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
   rel="stylesheet"
 />
-    <link rel="stylesheet" href="r.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="z.css">
+    
 
 </head>
 <body>
-    
-    <header>
+     <header class="header" data-header>
+    <div class="navb">
 
-        <nav>
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <!-- <a href="">Portfolio</a> -->
-            <a href="#service">Services</a>
-            <a href="#contact">Contact</a>
-        </nav>
+      <div class="overlay" data-overlay></div>
 
-    </header>
+      <a href="#" class="logo">
+        <h1 width="160" height="50"alt="Footcap logo">Tirath Telecom</h1>
+      </a>
 
+      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <h1 width="190" height="50" alt="Footcap logo">Tirath Telecom</h1>
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link">Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#moileaccessories" class="navbar-link">Mobile Accessories</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#" class="navbar-link"></a>
+          </li> -->
+
+          <li class="navbar-item">
+            <a href="#Contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li>
+            <a class="nav-action-btn">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Search</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="nav-action-btn">
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Login / Register</span>
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-action-btn">
+              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+              <span class="nav-action-text">Wishlist</span>
+
+              <data class="nav-action-badge" value="5" aria-hidden="true"></data>
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-action-btn">
+              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+              <data class="nav-action-text" value="318.00">Basket: <strong></strong></data>
+
+              <data class="nav-action-badge" value="4" aria-hidden="true"></data>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+
+   
 
     <div class="carousel" id="home">
 
@@ -40,13 +133,13 @@
                     <div class="name">TELECOM</div>
                     <div class="des">All Mobile Accessories Available and <br> All Types of Services Available</div>
                     <div class="btn">
-                        <button> Mobile Accessories</button>
+                        <button class="btna"> Mobile Accessories</button>
                         <button>Services</button>
                     </div>
                 </div>
             </div>
 
-            <div class="item" style="background-image: url(601bf865cad153c1914fe75271b4b5d0.jpg);">
+            <div class="item" style="background-image: url(76fd7c3e041f83ce9f36870b4ac53bd8.jpg);">
                 
                 <div class="content">
                     <div class="title">TIRATH</div>
@@ -118,11 +211,11 @@
 
             </div>
 
-            <!-- <div class="item" style="background-image: url(heron.jpeg);">
+            <div class="item" style="background-image: url(76fd7c3e041f83ce9f36870b4ac53bd8.jpg);">
                 
                 <div class="content">
-                    <div class="title">SLIDER</div>
-                    <div class="name">KINGFISHER</div>
+                    <div class="title">50%</div>
+                    <div class="name">OFF</div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
                     <div class="btn">
                         <button>See More</button>
@@ -130,11 +223,11 @@
                     </div>
                 </div>
 
-            </div> -->
+            </div>
 
-            <!-- <div class="item" style="background-image: url(eagel1\ \(1\).jpg);"> -->
+            <div class="item" style="background-image: url(76fd7c3e041f83ce9f36870b4ac53bd8.jpg);">
                 
-                <!-- <div class="content">
+                 <div class="content">
                     <div class="title">SLIDER</div>
                     <div class="name">PARROT</div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</div>
@@ -144,9 +237,9 @@
                     </div>
                 </div>
 
-            </div> -->
+            </div> 
 
-            <!-- <div class="item" style="background-image: url(b.jpeg);">
+            <div class="item" style="background-image: url(76fd7c3e041f83ce9f36870b4ac53bd8.jpg);">
                 
                 <div class="content">
                     <div class="title">SLIDER</div>
@@ -158,9 +251,9 @@
                     </div>
                 </div>
 
-            </div> -->
+            </div> 
 
-            <!-- <div class="item" style="background-image: url(crow.jpg);">
+            <div class="item" style="background-image: url(76fd7c3e041f83ce9f36870b4ac53bd8.jpg);">
                 
                 <div class="content">
                     <div class="title">SLIDER</div>
@@ -172,9 +265,9 @@
                     </div>
                 </div>
 
-            </div> -->
+            </div> 
 
-            <!-- <div class="item" style="background-image: url(heron.jpeg);">
+            <div class="item" style="background-image: url(76fd7c3e041f83ce9f36870b4ac53bd8.jpg);">
                 
                 <div class="content">
                     <div class="title">SLIDER</div>
@@ -186,7 +279,7 @@
                     </div>
                 </div>
 
-            </div> -->
+            </div> 
 
         </div>
 
@@ -201,134 +294,1012 @@
         <div class="timeRunning"></div>
 
     </div>
-
-   
-            <!-- Services -->
-            <section class="section__container explore__container" id="service">
-                <div class="explore__header">
-                  <h2 class="section__header">Services</h2>
-                  <div class="explore__nav">
-                    <span><i class="ri-arrow-left-line"></i></span>
-                    <span><i class="ri-arrow-right-line"></i></span>
-                  </div>
-                </div>
-                <div class="explore__grid">
-                  <div class="explore__card">
-                    <span><i class="ri-boxing-fill"></i></span>
-                    <h4>Strength</h4>
-                    <p>
-                      Embrace the essence of strength as we delve into its various
-                      dimensions physical, mental, and emotional.
-                    </p>
-                    <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-                  </div>
-                  <div class="explore__card">
-                    <span><i class="ri-heart-pulse-fill"></i></span>
-                    <h4>Physical Fitness</h4>
-                    <p>
-                      It encompasses a range of activities that improve health, strength,
-                      flexibility, and overall well-being.
-                    </p>
-                    <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-                  </div>
-                  <div class="explore__card">
-                    <span><i class="ri-run-line"></i></span>
-                    <h4>Fat Lose</h4>
-                    <p>
-                      Through a combination of workout routines and expert guidance, we'll
-                      empower you to reach your goals.
-                    </p>
-                    <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-                  </div>
-                  <div class="explore__card">
-                    <span><i class="ri-shopping-basket-fill"></i></span>
-                    <h4>Weight Gain</h4>
-                    <p>
-                      Designed for individuals, our program offers an effective approach
-                      to gaining weight in a sustainable manner.
-                    </p>
-                    <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-                  </div>
-                  
-                </div>
-              </section>
-            
-              
-               <!-- contact section design -->
-    <section class="contact" id="contact">
-        <h2 class="heading">
-          Contact <span>Me</span
-          ><span class="animate scroll" style="--i: 1"></span>
-        </h2>
-  
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="3cfe2c25-7aff-4fda-ad33-0346c89652a4">
-          <div class="input-box">
-            <div class="input-field">
-              <input type="text" placeholder="Full Name" required />
-              <span class="focus"></span>
-            </div>
-            <div class="input-field">
-              <input type="text" placeholder="Last Name" required />
-              <span class="focus"></span>
-            </div>
-  
-            <span class="animate scroll" style="--i: 3"></span>
-          </div>
-          <div class="input-box">
-            <div class="input-field">
-              <input type="number" placeholder="Mobile Number" required />
-              <span class="focus"></span>
-            </div>
-            <div class="input-field">
-              <input type="text" placeholder="Email" required />
-              <span class="focus"></span>
-            </div>
-  
-            <span class="animate scroll" style="--i: 5"></span>
-          </div>
-  
-          <div class="textarea-field">
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <span class="focus"></span>
-  
-            <span class="animate scroll" style="--i: 7"></span>
-          </div>
-  
-          <div class="btn-box btns">
-            <button type="submit" class="btn">Submit</button>
-  
-            <span class="animate scroll" style="--i: 9"></span>
-          </div>
-        </form>
-      </section>
-       <!-- footer design -->
-    <footer class="footer">
-        <div class="footer-text">
-          <p>
-            Copyright &copy; 2024 | Tirath Telecom |
-            All Rights Reserved
-          </p>
-  
-          <span class="animate scroll" style="--i: 1"></span>
-        </div>
-  
-        <div class="footer-iconTop">
-          <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
-  
-          <span class="animate scroll" style="--i: 3"></span>
-        </div>
-      </footer>
-  
-  
-          
     <script src="app.js"></script>
+    <script src="y.js"></script>
+    <!-- #about -->
+     
+
+     <!-- #services -->
+  <section class="service" id="service">
+        <h1>Services</h1>
+      <div class="container swiper">
+        <div class="wrapper">
+          <div class="card-list swiper-wrapper">
+            <!-- Single Card -->
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="76fd7c3e041f83ce9f36870b4ac53bd8.jpg" alt="Design Trends" />
+                <!-- <div class="card-tag"></div> -->
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Indian Rawly </h3>
+                <p class="card-text">Explore the latest user interface design trends that are shaping the digital landscape this year. From neumorphism to glassmorphism and beyond.</p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <!-- <img src="a.jpg" alt="Alex Smith" /> -->
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">Tirath Telecom</span>
+                      <span class="card-profile-role"></span>
+                    </div>
+                  </div>
+                  <a href="#" class="card-button">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Single Card -->
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="76fd7c3e041f83ce9f36870b4ac53bd8.jpg" alt="Development" />
+                <!-- <div class="card-tag">Money Transfer</div> -->
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Money Transfer </h3>
+                <p class="card-text">A comprehensive comparison of the most popular frontend frameworks and libraries that developers are using to build modern web applications.</p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="images/user-2.jpg" alt="Jessica Chen" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">Tirath Telecom</span>
+                      <span class="card-profile-role">Developer</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card-button">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Single Card -->
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="images/ai.jpg" alt="AI" />
+                <div class="card-tag">AI</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">AI User Experience Design</h3>
+                <p class="card-text">How artificial intelligence is revolutionizing user experience design and enabling more personalized, intuitive interfaces for digital products.</p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="images/user-3.jpg" alt="Marcus Johnson" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">Marcus Johnson</span>
+                      <span class="card-profile-role">UX Researcher</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card-button">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Single Card -->
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="images/productivity.jpg" alt="Productivity" />
+                <div class="card-tag">Productivity</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Workspace Design for Focus</h3>
+                <p class="card-text">Designing workspaces that maximize productivity and minimize distractions for creative professionals in the hybrid work environment.</p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="images/user-4.jpg" alt="Sarah Miller" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">Sarah Miller</span>
+                      <span class="card-profile-role">Interior Designer</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card-button">Read More</a>
+                </div>
+              </div>
+            </div>
+  
+            <!-- Single Card -->
+            <div class="card swiper-slide">
+              <div class="card-image">
+                <img src="images/animation.jpg" alt="Animation" />
+                <div class="card-tag">Animation</div>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">Micro Animation Designs</h3>
+                <p class="card-text">The small animations and interactions that make a big difference in user experience and how to implement them effectively in your designs.</p>
+                <div class="card-footer">
+                  <div class="card-profile">
+                    <img src="images/user-5.jpg" alt="David Park" />
+                    <div class="card-profile-info">
+                      <span class="card-profile-name">David Park</span>
+                      <span class="card-profile-role">Motion Designer</span>
+                    </div>
+                  </div>
+                  <a href="#" class="card-button">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+  
+          <!-- Navigation Buttons -->
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+  </section>
+      <!-- Linking Swiper script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+      <!-- Custom Script -->
+      <script src="g.js"></script>
+    
+    <!-- 
+        - #PRODUCT
+      -->
+  <section class="sectionproduct" id="moileaccessories">
+        <div class="navb">
+
+          <h2 class="h2">Mobile Accessories</h2>
+
+          <ul class="filter-list">
+
+            <li>
+              <button class="filter-btn  active">All</button>
+            </li>
+
+            <li>
+              <button class="filter-btn ">Air Pods</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Earphone</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Pen Drive</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Cable</button>
+            </li>
+
+            <li>
+              <button class="filter-btn">Finger Sleeve</button>
+            </li>
+
+          </ul>
+
+          <ul class="product-list">
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner"  id="airpods">
+                  <img src="04e17fd2-2404-42b6-862e-cf545ae1680f.jfif" width="312" height="350" loading="lazy"
+                    alt="Running Sneaker Shoes" class="image-contain">
+
+                  <!-- <div class="card-badge">New</div> -->
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+          
+<!-- 
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Air Pods</a> 
+                    
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Air Pods</a>
+                  </h3>
+
+                  <data class="card-price" value="180.85">250 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="7a0cb619-9f3d-49b1-881b-f446f377d57b.jfif" width="312" height="350" loading="lazy"
+                    alt="Leather Mens Slipper" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <!-- <div class="card-cat">
+                    <a href="#" class="card-cat-link">Earphone</a> 
+                    
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Earphone</a>
+                  </h3>
+
+                  <data class="card-price" value="190.85">100 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="d3afa4db-d794-4b0f-b13d-2e970a284286.jfif" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <!-- <div class="card-badge">New</div> -->
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <!-- <div class="card-cat">
+                    <a href="#" class="card-cat-link">Air Pods</a> 
+                    
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Air Pods</a>
+                  </h3>
+
+                  <data class="card-price" value="160.85">300 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="8017a0c9-3d44-441f-bd1b-b7c403f3d794.jfif" width="312" height="350" loading="lazy"
+                    alt="Air Jordan 7 Retro " class="image-contain">
+
+                  <!-- <div class="card-badge"> -25%</div> -->
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <!-- <div class="card-cat">
+                    <a href="#" class="card-cat-link"></a> 
+                  
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Type C Cable </a>
+                  </h3>
+
+                  <data class="card-price" value="170.85">100 Rs <del>200 Rs</del></data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="baa30f42-d285-4af1-a703-572a4ee2a13e.jfif" width="312" height="350" loading="lazy"
+                    alt="Nike Air Max 270 SE" class="image-contain">
+
+                  <!-- <div class="card-badge">New</div> -->
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <!-- <div class="card-cat">
+                    <a href="#" class="card-cat-link">Finger Sleeve</a> 
+                   
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Finger Sleeve</a>
+                  </h3>
+
+                  <data class="card-price" value="120.85">20 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="da8872df-d32e-4c4a-85ea-430b758e27e2.jfif" width="312" height="350" loading="lazy"
+                    alt="Adidas Sneakers Shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <!-- <div class="card-cat">
+                    <a href="#" class="card-cat-link">Pen Drive</a> 
+                    
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Pen Drive</a>
+                  </h3>
+
+                  <data class="card-price" value="100.85">300 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="IMG_20250428_161015.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Basketball shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+<!--                   <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> /
+                    <a href="#" class="card-cat-link">Sports</a>
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Earphone</a>
+                  </h3>
+
+                  <data class="card-price" value="120.85">80 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="IMG_20250428_160755.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link"></a> 
+                    
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Mobile Stand </a>
+                  </h3>
+
+                  <data class="card-price" value="100.85">50 Rs </data>
+
+                </div>
+
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                -
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                
+            
+
+                <figure class="card-banner">
+                  <img src="IMG_20250428_160817.jpg" width="312" height="350" loading="lazy"
+                    alt="Simple Fabric Shoe" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+<!--                   <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> /
+                    <a href="#" class="card-cat-link">Women</a>
+                  </div> -->
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Apple Cable</a>
+                  </h3>
+
+                  <data class="card-price" value="100.85">150 Rs</data>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+    
+      
+
+
+
+
+
+     
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="Contact">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <h1 width="160" height="50" alt="Footcap logo">Social Media</h1>
+          </a>
+
+          <ul class="social-list">
+
+            <div>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-WhatsApp"></ion-icon>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-Facebook"></ion-icon>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-Instagram"></ion-icon>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-link-box">
+
+          <ul class="footer-list">
+
+            <div>
+              <p class="footer-list-title">Contact Us</p>
+            </div>
+
+            <div>
+              <address class="footer-link">
+                <ion-icon name="location"></ion-icon>
+
+                <span class="footer-link-text">
+                  New Delhi
+                </span>
+              </address>
+            </div>
+
+            <div>
+              <a href="tel:+557343673257" class="footer-link">
+                <ion-icon name="call"></ion-icon>
+
+                <span class="footer-link-text">+9315004071</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="mailto:footcap@help.com" class="footer-link">
+                <ion-icon name="mail"></ion-icon>
+
+                <span class="footer-link-text">tirathtelecom@gmail.com</span>
+              </a>
+            </div>
+
+          </ul>
+
+          <ul class="footer-list">
+
+            <div>
+              <p class="footer-list-title">My Account</p>
+            </div>
+
+            <div>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">My Account</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">View Cart</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Wishlist</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">Compare</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="#" class="footer-link">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+
+                <span class="footer-link-text">New Products</span>
+              </a>
+            </div>
+
+          </ul>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Opening Time</p>
+
+            <table class="footer-table">
+              <tbody>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Mon :</th>
+
+                  <td class="table-data">9AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Tue :</th>
+
+                  <td class="table-data">9AM - 10PM</td>
+                </tr>
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Wed:</th>
+
+                  <td class="table-data">9AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Fri:</th>
+
+                  <td class="table-data">9AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sat:</th>
+
+                  <td class="table-data">9AM - 10PM</td>
+                </tr>
+
+                <tr class="table-row">
+                  <th class="table-head" scope="row">Sun:</th>
+
+                  <td class="table-data">9AM - 10PM</td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="newsletter-text">
+              Send you Massage
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
+
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2025 <a href="#" class="copyright-link">TIRATH TELECOM</a>. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+     
+  <script src="a.js"></script>
+  
+  
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+      
+
+    
 </body>
 </html>
