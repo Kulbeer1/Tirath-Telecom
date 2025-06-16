@@ -85,9 +85,10 @@
   z-index: 4;
 }
 .logo{
+    
   color:red;
   text-decoration:none;
-  margin-left:20px;
+  margin-left:15px;
 }
 .header.active { box-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.1); }
 
