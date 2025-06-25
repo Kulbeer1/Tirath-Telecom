@@ -1,40 +1,49 @@
-'use strict';
+const navbarLinks = document.querySelectorAll(".nav-menu .nav-link");
+const menuOpenButton = document.querySelector("#menu-open-button");
+const menuCloseButton = document.querySelector("#menu-close-button");
 
+menuOpenButton.addEventListener("click", () => {
+  // Toggle mobile menu visibility
+  document.body.classList.toggle("show-mobile-menu");
+});
 
+// Close menu when the close button is clicked
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 
-/**
- * navbar toggle
- */
+// Close menu when nav link is clicked
+navbarLinks.forEach((link) => {
+  link.addEventListener("click", () => menuOpenButton.click());
+});
 
-const overlay = document.querySelector("[data-overlay]");
-const navOpenBtn = document.querySelector("[data-nav-open-btn]");
-const navbar = document.querySelector("[data-navbar]");
-const navCloseBtn = document.querySelector("[data-nav-close-btn]");
+/* Initializing Swiper */
+let swiper = new Swiper(".slider-wrapper", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 25,
 
-const navElems = [overlay, navOpenBtn, navCloseBtn];
+  // Pagination bullets
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
 
-for (let i = 0; i < navElems.length; i++) {
-  navElems[i].addEventListener("click", function () {
-    navbar.classList.toggle("active");
-    overlay.classList.toggle("active");
-  });
-}
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-
-
-/**
- * header & go top btn active on page scroll
- */
-
-const header = document.querySelector("[data-header]");
-const goTopBtn = document.querySelector("[data-go-top]");
-
-window.addEventListener("scroll", function () {
-  if (window.scrollY >= 80) {
-    header.classList.add("active");
-    goTopBtn.classList.add("active");
-  } else {
-    header.classList.remove("active");
-    goTopBtn.classList.remove("active");
-  }
+  /* Responsive breakpoints */
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
