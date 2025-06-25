@@ -1,1177 +1,276 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TIRATH TELECOM</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="logo.png" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="r.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIRATH TELECOM</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="r.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" href="logo.png"/>
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+  <link
+  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  rel="stylesheet"
+/>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
 
-  <!-- 
-    - preload banner
-  -->
-  <link rel="preload" href="logo.png" as="image">
-
-</head>
-
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <div class="overlay" data-overlay></div>
-
-      <a href="#" class="logo">
-        <h1 width="160" height="50"alt="Footcap logo">Tirath Telecom</h1>
-      </a>
-
-      <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
-        <ion-icon name="menu-outline"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-navbar>
-
-        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-        <a href="#" class="logo">
-          <h1 width="190" height="50" alt="Footcap logo">Tirath Telecom</h1>
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">Tirath Telecom</h2>
         </a>
 
-        <ul class="navbar-list">
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
 
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link">Home</a>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
           </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link">About</a>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
           </li>
-
-          <li class="navbar-item">
-            <a href="#service" class="navbar-link">Services</a>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Services</a>
           </li>
-
-          <li class="navbar-item">
-            <a href="#moileaccessories" class="navbar-link">Mobile Accessories</a>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Mobile Accessories</a>
           </li>
-
-          <!-- <li class="navbar-item">
-            <a href="#" class="navbar-link"></a>
-          </li> -->
-
-          <li class="navbar-item">
-            <a href="#Contact" class="navbar-link">Contact</a>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link">Printing</a>
           </li>
-
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
 
-        <ul class="nav-action-list">
-
-          <li>
-            <button class="nav-action-btn">
-              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-
-              <span class="nav-action-text">Search</span>
-            </button>
-          </li>
-
-          <li>
-            <a href="#" class="nav-action-btn">
-              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-              <span class="nav-action-text">Login / Register</span>
-            </a>
-          </li>
-
-          <li>
-            <button class="nav-action-btn">
-              <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-
-              <span class="nav-action-text">Wishlist</span>
-
-              <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
-            </button>
-          </li>
-
-          <li>
-            <button class="nav-action-btn">
-              <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
-
-              <data class="nav-action-text" value="318.00">Basket: <strong></strong></data>
-
-              <data class="nav-action-badge" value="4" aria-hidden="true"></data>
-            </button>
-          </li>
-
-        </ul>
-
+        <button id="menu-open-button" class="fas fa-bars"></button>
       </nav>
+    </header>
 
-    </div>
-  </header>
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">TIRATH TELECOM</h2>
+            <h3 class="subtitle"> All types of services and mobile accessories available</h3>
+            <p class="description"></p>
 
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-                  <section class="section hero" style="background-image: url(39654693f718ae57538bfb7bf41b217c.jpg)">
-        <div class="container">
-
-          <h2 class="h1 hero-title">
-            <strong style="color: red;">  TIRATH TELECOM</strong>
-          </h2>
-
-          <p class="hero-text" style="color: white;">
-            All Mobile Accessories and All Services Availble
-
-
-          </p>
-
-          <button class="btn btn-primary">
-            <span>Shop Now</span>
-
-            <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-          </button>
-
-        </div>
-                  </section>
-
-
-
-      <!-- 
-        - #COLLECTION
-      -->
-      <section class="service" id="service">
-        <h1>Services</h1>
-      <div class="container swiper">
-        <div class="wrapper">
-          <div class="card-list swiper-wrapper">
-            <!-- Single Card -->
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="a.jpg" alt="Design Trends" />
-                <div class="card-tag">Design</div>
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Indian Rawly </h3>
-                <p class="card-text">Explore the latest user interface design trends that are shaping the digital landscape this year. From neumorphism to glassmorphism and beyond.</p>
-                <div class="card-footer">
-                  <div class="card-profile">
-                    <img src="a.jpg" alt="Alex Smith" />
-                    <div class="card-profile-info">
-                      <span class="card-profile-name">Tirath Telecom</span>
-                      <span class="card-profile-role">9868459342</span>
-                    </div>
-                  </div>
-                  <a href="#" class="card-button">Read More</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Single Card -->
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="a.jpg" alt="Development" />
-                <div class="card-tag">Money Transfer</div>
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Money Transfer </h3>
-                <p class="card-text">A comprehensive comparison of the most popular frontend frameworks and libraries that developers are using to build modern web applications.</p>
-                <div class="card-footer">
-                  <div class="card-profile">
-                    <img src="images/user-2.jpg" alt="Jessica Chen" />
-                    <div class="card-profile-info">
-                      <span class="card-profile-name">Jessica Chen</span>
-                      <span class="card-profile-role">Developer</span>
-                    </div>
-                  </div>
-                  <a href="#" class="card-button">Read More</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Single Card -->
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/ai.jpg" alt="AI" />
-                <div class="card-tag">AI</div>
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">AI User Experience Design</h3>
-                <p class="card-text">How artificial intelligence is revolutionizing user experience design and enabling more personalized, intuitive interfaces for digital products.</p>
-                <div class="card-footer">
-                  <div class="card-profile">
-                    <img src="images/user-3.jpg" alt="Marcus Johnson" />
-                    <div class="card-profile-info">
-                      <span class="card-profile-name">Marcus Johnson</span>
-                      <span class="card-profile-role">UX Researcher</span>
-                    </div>
-                  </div>
-                  <a href="#" class="card-button">Read More</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Single Card -->
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/productivity.jpg" alt="Productivity" />
-                <div class="card-tag">Productivity</div>
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Workspace Design for Focus</h3>
-                <p class="card-text">Designing workspaces that maximize productivity and minimize distractions for creative professionals in the hybrid work environment.</p>
-                <div class="card-footer">
-                  <div class="card-profile">
-                    <img src="images/user-4.jpg" alt="Sarah Miller" />
-                    <div class="card-profile-info">
-                      <span class="card-profile-name">Sarah Miller</span>
-                      <span class="card-profile-role">Interior Designer</span>
-                    </div>
-                  </div>
-                  <a href="#" class="card-button">Read More</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Single Card -->
-            <div class="card swiper-slide">
-              <div class="card-image">
-                <img src="images/animation.jpg" alt="Animation" />
-                <div class="card-tag">Animation</div>
-              </div>
-              <div class="card-content">
-                <h3 class="card-title">Micro Animation Designs</h3>
-                <p class="card-text">The small animations and interactions that make a big difference in user experience and how to implement them effectively in your designs.</p>
-                <div class="card-footer">
-                  <div class="card-profile">
-                    <img src="images/user-5.jpg" alt="David Park" />
-                    <div class="card-profile-info">
-                      <span class="card-profile-name">David Park</span>
-                      <span class="card-profile-role">Motion Designer</span>
-                    </div>
-                  </div>
-                  <a href="#" class="card-button">Read More</a>
-                </div>
-              </div>
+            <div class="buttons">
+              <a href="#menu" class="button order-now">Services</a>
+              <a href="#testimonials" class="button contact-us">Order Now</a>
             </div>
           </div>
-  
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
-  
-          <!-- Navigation Buttons -->
-          <div class="swiper-slide-button swiper-button-prev"></div>
-          <div class="swiper-slide-button swiper-button-next"></div>
-        </div>
-      </div>
-  </section>
-      <!-- Linking Swiper script -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  
-      <!-- Custom Script -->
-      <script src="g.js"></script>
-      
-
-      <!-- 
-        - #PRODUCT
-      -->
-
-      <section class="sectionproduct" id="moileaccessories">
-        <div class="container">
-
-          <h2 class="h2">Mobile Accessories</h2>
-
-          <ul class="filter-list">
-
-            <li>
-              <button class="filter-btn  active">All</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Air Pods</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Earphone</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Pen Drive</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Cable</button>
-            </li>
-
-            <li>
-              <button class="filter-btn">Finger Sleeve</button>
-            </li>
-
-          </ul>
-
-          <ul class="product-list">
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner"  id="airpods">
-                  <img src="04e17fd2-2404-42b6-862e-cf545ae1680f.jfif" width="312" height="350" loading="lazy"
-                    alt="Running Sneaker Shoes" class="image-contain">
-
-                  <!-- <div class="card-badge">New</div> -->
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-<!-- 
-                  <div class="card-cat">
-                    <a href="#" class="card-cat-link">Air Pods</a> 
-                    
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Air Pods</a>
-                  </h3>
-
-                  <data class="card-price" value="180.85">250 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="7a0cb619-9f3d-49b1-881b-f446f377d57b.jfif" width="312" height="350" loading="lazy"
-                    alt="Leather Mens Slipper" class="image-contain">
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <!-- <div class="card-cat">
-                    <a href="#" class="card-cat-link">Earphone</a> 
-                    
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Earphone</a>
-                  </h3>
-
-                  <data class="card-price" value="190.85">100 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="d3afa4db-d794-4b0f-b13d-2e970a284286.jfif" width="312" height="350" loading="lazy"
-                    alt="Simple Fabric Shoe" class="image-contain">
-
-                  <!-- <div class="card-badge">New</div> -->
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <!-- <div class="card-cat">
-                    <a href="#" class="card-cat-link">Air Pods</a> 
-                    
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Air Pods</a>
-                  </h3>
-
-                  <data class="card-price" value="160.85">300 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="8017a0c9-3d44-441f-bd1b-b7c403f3d794.jfif" width="312" height="350" loading="lazy"
-                    alt="Air Jordan 7 Retro " class="image-contain">
-
-                  <!-- <div class="card-badge"> -25%</div> -->
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <!-- <div class="card-cat">
-                    <a href="#" class="card-cat-link"></a> 
-                  
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Type C Cable </a>
-                  </h3>
-
-                  <data class="card-price" value="170.85">100 Rs <del>200 Rs</del></data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="baa30f42-d285-4af1-a703-572a4ee2a13e.jfif" width="312" height="350" loading="lazy"
-                    alt="Nike Air Max 270 SE" class="image-contain">
-
-                  <!-- <div class="card-badge">New</div> -->
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <!-- <div class="card-cat">
-                    <a href="#" class="card-cat-link">Finger Sleeve</a> 
-                   
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Finger Sleeve</a>
-                  </h3>
-
-                  <data class="card-price" value="120.85">20 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="da8872df-d32e-4c4a-85ea-430b758e27e2.jfif" width="312" height="350" loading="lazy"
-                    alt="Adidas Sneakers Shoes" class="image-contain">
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <!-- <div class="card-cat">
-                    <a href="#" class="card-cat-link">Pen Drive</a> 
-                    
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Pen Drive</a>
-                  </h3>
-
-                  <data class="card-price" value="100.85">300 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="IMG_20250428_161015.jpg" width="312" height="350" loading="lazy"
-                    alt="Nike Basketball shoes" class="image-contain">
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-<!--                   <div class="card-cat">
-                    <a href="#" class="card-cat-link">Men</a> /
-                    <a href="#" class="card-cat-link">Sports</a>
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Earphone</a>
-                  </h3>
-
-                  <data class="card-price" value="120.85">80 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                <figure class="card-banner">
-                  <img src="IMG_20250428_160755.jpg" width="312" height="350" loading="lazy"
-                    alt="Simple Fabric Shoe" class="image-contain">
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-cat">
-                    <a href="#" class="card-cat-link"></a> 
-                    
-                  </div>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Mobile Stand </a>
-                  </h3>
-
-                  <data class="card-price" value="100.85">50 Rs </data>
-
-                </div>
-
-              </div>
-            </li>
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                -
-            <li class="product-item">
-              <div class="product-card" tabindex="0">
-
-                
-            
-
-                <figure class="card-banner">
-                  <img src="IMG_20250428_160817.jpg" width="312" height="350" loading="lazy"
-                    alt="Simple Fabric Shoe" class="image-contain">
-
-                  <ul class="card-action-list">
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-1">
-                        <ion-icon name="cart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-1">Add to Cart</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-2">
-                        <ion-icon name="heart-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-2">Add to Whishlist</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-3">
-                        <ion-icon name="eye-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-3">Quick View</div>
-                    </li>
-
-                    <li class="card-action-item">
-                      <button class="card-action-btn" aria-labelledby="card-label-4">
-                        <ion-icon name="repeat-outline"></ion-icon>
-                      </button>
-
-                      <div class="card-action-tooltip" id="card-label-4">Compare</div>
-                    </li>
-
-                  </ul>
-                </figure>
-
-                <div class="card-content">
-
-<!--                   <div class="card-cat">
-                    <a href="#" class="card-cat-link">Men</a> /
-                    <a href="#" class="card-cat-link">Women</a>
-                  </div> -->
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Apple Cable</a>
-                  </h3>
-
-                  <data class="card-price" value="100.85">150 Rs</data>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+          <div class="hero-image-wrapper">
+            <img src="feaa942e-42f5-4120-bec0-9e1d655bb3ad.jpg" alt="" class="hero-image" />
+          </div>
         </div>
       </section>
 
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="feaa942e-42f5-4120-bec0-9e1d655bb3ad.jpg" alt="About" class="about-image" />
+          </div>
+          <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">hamare yahan per har tarah ki sar online services and mobile accessories milati <br>Thank You😊</p>
+            <div class="social-link-list">
+              <a href="https://wa.me/+919315004071" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://wa.me/+919868459342" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Menu section -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Services</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img src="moratoriumloan-1604566614.jpg" alt="Hot Beverages" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Money Transfer</h3>
+                <p class="text"> hamare yahan per sabhi Bank mein aur upi mein paise transfer Karen aur nikale jaate Hain</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="Vande-Bharat-scaled.jpg" alt="Cold Beverages" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Railway Ticket</h3>
+                <p class="text">Creamy and frothy cold coffee to make you cool.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="download.jpg" alt="Refreshment" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Air Ticket</h3>
+                <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="fivestars04_s.jpg" alt="Special Combos" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Bus Ticket</h3>
+                <p class="text">Your favorite eating and drinking combations.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="images.jpg" alt="Dessert" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Hotel Booking</h3>
+                <p class="text">Satiate your palate and take you on a culinary treat.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="117939994.webp" alt="burger & French Fries" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Mobile Recharge / Sim </h3>
+                <p class="text">Quick bites to satisfy your small size hunger.</p>
+              </div>
+            </li>
+           <li class="menu-item">
+              <img src="images (1).jpg" alt="burger & French Fries" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Gas Bill  </h3>
+                <p class="text">Quick bites to satisfy your small size hunger.</p>
+              </div>
+            </li>
+          <li class="menu-item">
+              <img src="images (2).jpg" alt="burger & French Fries" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Water Bill</h3>
+                <p class="text">Quick bites to satisfy your small size hunger.</p>
+              </div>
+            </li>
+                      <li class="menu-item">
+              <img src="images (3).jpg" alt="burger & French Fries" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Electricity Bill</h3>
+                <p class="text">Quick bites to satisfy your small size hunger.</p>
+              </div>
+            </li>
+                      <li class="menu-item">
+            <img src="images (4).jpg" alt="burger & French Fries" class="menu-image" />
+            <div class="menu-details">
+              <h3 class="name">MCD House Tax</h3>
+              <p class="text">Quick bites to satisfy your small size hunger.</p>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </section>
 
-
-
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Mobile Accessories</h2>
+      </section>
+                 
     
-      
 
-
-
-
-
-     
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer" id="Contact">
-
-    <div class="footer-top section">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <h1 width="160" height="50" alt="Footcap logo">Social Media</h1>
-          </a>
-
-          <ul class="social-list">
-
-            <li>
-              <a href="https://wa.me/+919315004071" class="social-link">
-                <ion-icon name="logo-WhatsApp"></ion-icon>
-              </a>
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Printing</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="024377aa-1133-4761-b243-29cff9572692.jpg" alt="Gallery Image" class="gallery-image" />
             </li>
-
-            <li>
-              <a href="https://wa.me/+9868459342" class="social-link">
-                <ion-icon name="logo-WhatsApp"></ion-icon>
-              </a>
+            <li class="gallery-item">
+              <img src="8971754d-3e39-4942-be85-e3b86d2eba28.jpg" alt="" class="gallery-image" />
             </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-Instagram"></ion-icon>
-              </a>
+            <li class="gallery-item">
+              <img src="e3f62c86-a1cd-4400-af90-f493a75ebed4.jpg" alt="Image" class="gallery-image" />
             </li>
-
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
+            <li class="gallery-item">
+              <img src="images/gallery-4.jpg" alt="Image" class="gallery-image" />
             </li>
-
+            <li class="gallery-item">
+              <img src="images/gallery-5.jpg" alt="Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gallery-6.jpg" alt="Image" class="gallery-image" />
+            </li>
           </ul>
-
         </div>
+      </section>
 
-        <div class="footer-link-box">
-
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">Contact Us</p>
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>New Delhi </p>
             </li>
-
-            <li>
-              <address class="footer-link">
-                <ion-icon name="location"></ion-icon>
-
-                <span class="footer-link-text">
-                  New Delhi
-                </span>
-              </address>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>tirathtelecom@gmail.com</p>
             </li>
-
-            <li>
-              <a href="tel:+557343673257" class="footer-link">
-                <ion-icon name="call"></ion-icon>
-
-                <span class="footer-link-text">+919315004071</span>
-              </a>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(+91)9315004071</p>
             </li>
-
-            <li>
-              <a href="mailto:footcap@help.com" class="footer-link">
-                <ion-icon name="mail"></ion-icon>
-
-                <span class="footer-link-text">tirathtelecomgmail.com</span>
-              </a>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 10:00 PM</p>
             </li>
-
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 9:00 AM - 10:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: 9:00 AM -10:00 PM</p>
+            </li>
+            
           </ul>
 
-          <ul class="footer-list">
-
-            <li>
-              <p class="footer-list-title">My Account</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                <span class="footer-link-text">My Account</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                <span class="footer-link-text">View Cart</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                <span class="footer-link-text">Wishlist</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                <span class="footer-link-text">Compare</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">
-                <ion-icon name="chevron-forward-outline"></ion-icon>
-
-                <span class="footer-link-text">New Products</span>
-              </a>
-            </li>
-
-          </ul>
-
-          <div class="footer-list">
-
-            <p class="footer-list-title">Opening Time</p>
-
-            <table class="footer-table">
-              <tbody>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Mon :</th>
-
-                  <td class="table-data">9AM - 10PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Tue :</th>
-
-                  <td class="table-data">9AM - 10PM</td>
-                </tr>
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Wed:</th>
-
-                  <td class="table-data">9AM - 10PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Fri:</th>
-
-                  <td class="table-data">9AM - 10PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Sat:</th>
-
-                  <td class="table-data">9AM - 10PM</td>
-                </tr>
-
-                <tr class="table-row">
-                  <th class="table-head" scope="row">Sun:</th>
-
-                  <td class="table-data">9AM - 10PM</td>
-                </tr>
-
-              </tbody>
-            </table>
-
-          </div>
-
-          <div class="footer-list">
-
-            <p class="footer-list-title">Newsletter</p>
-
-            <p class="newsletter-text">
-              Authoritatively morph 24/7 potentialities with error-free partnerships.
-            </p>
-
-            <form action="" class="newsletter-form">
-              <input type="email" name="email" required placeholder="Email Address" class="newsletter-input">
-
-              <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-
-          </div>
-
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
         </div>
+      </section>
 
-      </div>
-    </div>
+      <!-- Footer section -->
+      <footer class="footer-section">
+                  <div class="social-link-list">
+            <a href="https://wa.me/+919315004071" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/+919868459342" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+    <div class="section-content">
+          <p class="copyright-text">© 2025 Tirath Telecom</p>
+          </div>
+      </footer>
+    </main>
 
-    <div class="footer-bottom">
-      <div class="container">
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <p class="copyright">
-          &copy; 2025 <a href="#" class="copyright-link">TIRATH TELECOM</a>. All Rights Reserved
-        </p>
-
-      </div>
-    </div>
-
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top-btn" data-go-top>
-    <ion-icon name="arrow-up-outline"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="r.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <!-- Linking custom script -->
+    <script src="r.js"></script>
+  </body>
 </html>
