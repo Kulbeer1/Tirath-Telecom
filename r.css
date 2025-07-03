@@ -7,7 +7,8 @@
   box-sizing: border-box;
   font-family:  sans-serif;
 }
-:root {
+
+  :root {
   /* Colors */
   --white-color: #fff;
   --dark-color: #252525;
@@ -15,7 +16,13 @@
   --secondary-color: #f3961c;
   --light-pink-color: #faf4f5;
   --medium-gray-color: #ccc;
-  --new-teal-color: #20C997; /* New color added */
+  --new-purple-color: #6F42C1; /* New color added */
+
+
+/* Example usage */
+.navbar {
+    background-color: var(--new-purple-color);
+} /* New color added */
 
 
   /* Font size */
