@@ -1,0 +1,37 @@
+
+
+:root {
+  /* Light theme colors */
+  --color-text-primary: #1F2936;
+  --color-text-placeholder: #798EAE;
+  --color-bg-primary: #f9fafb;
+  --color-bg-secondary: #ECECFD;
+  --color-bg-sidebar: #FFFFFF;
+  --color-border-hr: #E2E8F0;
+  --color-hover-primary: #695CFE;
+  --color-hover-secondary: #e2e2fb;
+  --color-shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Announcement bar */
+.announce{color:blue;padding:8px 0;overflow:hidden}
+.announce-inner{display:flex;gap:40px;align-items:center;white-space:nowrap;animation:scroll 14s linear infinite}
+.announce-item{display:inline-flex;align-items:center;gap:10px;padding:6px 10px;font-weight:600}
+.meg{font-size:18px}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .announce{padding:6px 0}
+  .announce-inner{
+    gap:12px;
+    animation:scroll 10s linear infinite;
+  }
+  .announce-item{padding:6px 8px;font-size:14px}
+  .meg{font-size:16px}
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .announce-inner{animation: none; transform: translateX(0)}
+}
