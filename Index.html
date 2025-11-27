@@ -9,8 +9,8 @@
     <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="i.css" />
-    <link rel="stylesheet" href="" />
-    <link rel="icon" href="logo.png"/>
+    <!-- <link rel="stylesheet" href="navbar.css" /> -->
+    <link rel="icon" href="logo1.png"/>
      <link
     href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -25,7 +25,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
-
+<link rel="stylesheet" href="styles.css">
   </head>
   <body>
         <!-- Header / Navbar -->
@@ -61,19 +61,57 @@
         <button id="menu-open-button" class="fas fa-bars"></button>
       </nav>
     </header>
+ 
+      <!-- WhatsApp floating button -->
+      <style>
+        .whatsapp-fab {
+          position: fixed;
+          right: 24px;
+          bottom: 24px;
+          z-index: 9999;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          width: 56px;
+          height: 56px;
+          background: #25D366;
+          border-radius: 50%;
+          box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+          transition: transform 150ms ease, box-shadow 150ms ease;
+          text-decoration: none;
+        }
+        .whatsapp-fab:active,
+        .whatsapp-fab:focus { outline: none; transform: translateY(1px); }
+        .whatsapp-fab:hover { box-shadow: 0 8px 22px rgba(0,0,0,0.22); }
+        .whatsapp-icon { width: 28px; height: 28px; display:block; }
 
- <!-- <section class="slider">
-        <button id="slider-left"><i class="fas fa-chevron-left"></i></button>
-        <div class="slider-images">
-           <a href="#menu"> <img src="pan card.jpg" alt=""></a>
-            <img src="Blog_Paytm_What-is-EPIC-Number-in-Voter-ID-Card.jpg" alt="" >
-         <a href="#testimonials">   <img src="banner.jpg" alt=""></a>
-                        <img src="file-20240227-28-cejldv.jpg" alt="">
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+          .whatsapp-fab { right: 18px; bottom: 18px; width: 50px; height: 50px; }
+          .whatsapp-icon { width: 24px; height: 24px; }
+        }
 
-        </div>
-        <!-- <button id="slider-right"><i class="fas fa-chevron-right"></i></button> -->
-    </section>
-    <script src="a.js"></script> -->
+        @media (max-width: 420px) {
+          /* smaller phones: slightly smaller, less intrusive */
+          .whatsapp-fab { right: 12px; bottom: 12px; width: 44px; height: 44px; }
+          .whatsapp-icon { width: 20px; height: 20px; }
+        }
+
+        @media (max-width: 320px) {
+          /* very small screens: hide if needed (optional) */
+          .whatsapp-fab { display: none; }
+        }
+
+        /* Respect reduced motion preference */
+        @media (prefers-reduced-motion: reduce) {
+          .whatsapp-fab { transition: none; }
+        }
+      </style>
+
+      <a class="whatsapp-fab" href="https://wa.me/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp">
+        <img src="WhatsApp.svg.webp" alt="WhatsApp" class="whatsapp-icon" width="48" height="48" />
+      </a>
+
 
 
     <main>
@@ -100,7 +138,7 @@
       <section class="about-section" id="about">
         <div class="section-content">
           <div class="about-image-wrapper">
-            <img src="logo.png" alt="About" class="about-image" />
+            <img src="logo1.png" alt="About" class="about-image" />
           </div>
           <div class="about-details">
             <h2 class="section-title"id="adout">About Us</h2>
@@ -138,6 +176,8 @@ Thank you for choosing Tirath Telecom. We look forward to serving you!
       <!-- Menu section -->
       <section class="menu-section" id="menu">
         <h2 class="section-title">Services</h2>
+         
+  
        <div class="section-content">
   <ul class="menu-list">
     <li class="menu-item">
@@ -238,7 +278,23 @@ Thank you for choosing Tirath Telecom. We look forward to serving you!
           <p class="text">Naya Driving License banwana, renewal, duplicate, ya status check karna ho to yahaan se aasaani se karvayen.</p>
       </div>
     </li>
+    
+    <li class="menu-item">
+      <img src="https://thepassportagents.com/wp-content/uploads/2025/06/How-Many-Types-of-Passport-in-India.jpg" alt="Passport" class="menu-image" />
+      <div class="menu-details">
+        <h3 class="name" id="name">Passport</h3>
+        <p class="text">Naya passport banana, renewal, tatkal seva, ya application status check karna ho — sabhi seva yahan uplabdh hain.</p>
+       
+      </div>
+    </li>
 
+    <li class="menu-item">
+      <img src="Blog_Paytm_Driving-Licence-Status-Steps-to-Check-DL-Application-Status.jpg" alt="Driving License" class="menu-image" />
+      <div class="menu-details">
+        <h3 class="name" id="name">Driving License</h3>
+          <p class="text">Naya Driving License banwana, renewal, duplicate, ya status check karna ho to yahaan se aasaani se karvayen.</p>
+      </div>
+    </li>
     <li class="menu-item">
       <img src="Blog_Paytm_What-is-EPIC-Number-in-Voter-ID-Card.jpg" alt="Voter ID Card" class="menu-image" />
       <div class="menu-details">
@@ -246,6 +302,7 @@ Thank you for choosing Tirath Telecom. We look forward to serving you!
           <p class="text">Naya Voter ID banwana, correction karwana, ya status check karna ho to yahaan se aasaani se karvaen.</p>
       </div>
     </li>
+    
   </ul>
 </div>
       </section>
@@ -254,169 +311,121 @@ Thank you for choosing Tirath Telecom. We look forward to serving you!
       <section class="testimonials-section" id="testimonials">
         <h2 class="section-title"id="moblie">Mobile Accessories</h2>
               <div class="card-container">
-       <div class="card">
-    <img src="image.jpg" alt="a" class="card-image">
-    <div class="card-content">
-        
-        <h2> Earfone</h2>
-        
-        <p class="description">
-            Stylish and durable earphones with clear sound and deep bass. Perfect for music, calls, and daily use. 
-            Lightweight design ensures comfort even during long listening sessions.
-        </p>
-        
-        <p class="price">100 Rs</p>
-        
-        <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-        
-        
-    </div>
-</div>
- <div class="card">
-            <img src="04e17fd2-2404-42b6-862e-cf545ae1680f.jfif" alt="boAt Rockerz Sports 2" class="card-image">
-            <div class="card-content">
-                
-                <h2>AirPods</h2>
-                
-                <p class="description">Experience premium sound with these stylish AirPods. Featuring Active Noise Cancellation (ANC) 
-        for crystal-clear music and calls, they are lightweight, comfortable, and perfect for daily use. 
-        Enjoy wireless freedom with a sleek design and long-lasting performance.</p>
-                <p class="price">300 Rs</p>
-                <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-        
-            </div>
-        </div>
-        <div class="card">
-    <img src="7a0cb619-9f3d-49b1-881b-f446f377d57b.jfif" alt="boAt Rockerz Sports 3" class="card-image">
-    <div class="card-content">
-        
-        <h2>Earfone</h2>
-        
-        <p class="description">
-            Enjoy crystal-clear sound with boAt Rockerz earphones. Designed for music lovers, these earphones deliver 
-            deep bass, clear vocals, and long-lasting comfort. Perfect for listening to music, watching videos, 
-            or making calls on the go.
-        </p>
-        
-        <p class="price">100 Rs</p>
-        
-         <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-      
-    </div>
-</div>
-
-       <div class="card">
-    <img src="8017a0c9-3d44-441f-bd1b-b7c403f3d794.jfif" alt="boAt Rockerz Sports 4" class="card-image">
-    <div class="card-content">
-        
-        <h2>Type C Cable</h2>
-        
-        <p class="description">
-            Fast charging and data transfer cable with durable build quality. Compatible with all Type-C devices, 
-            this cable ensures reliable performance and long-lasting use.
-        </p>
-        
-        <p class="price">100 Rs</p>
-        
-         <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-        
-    </div>
-</div>
-
-<div class="card">
-    <img src="IMG_20250428_160755.jpg" alt="boAt Rockerz Sports 5" class="card-image">
-    <div class="card-content">
-        
-        <h2>Mobile Stand</h2>
+      <section class="categories" id="categories">
+        <div class="category" data-key="clothing">
+      <div class="circle" style="--bg:#cfe6ff">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="" style="display:block;text-align:center;">
+          <img class="icon" src="8017a0c9-3d44-441f-bd1b-b7c403f3d794.jfif" alt="Charging & Data Cable" style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+        </a>
+      </div>
+      <button class="label">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">
+          Charging & Data Cable (Type C, iPhone, Samsung)
+        </a>
+      </button>
+      </div>
+     <div class="category" data-key="shaster">
+       <div class="circle" style="--bg:#e9f4c8">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Shaster & Accessories" style="display:block;text-align:center;">
+        <img class="icon" src="IMG_20250428_160834.jpg" alt="Shaster & Accessories"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+     </a>
+      </div>
+       <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">OTG</a></button>
+     </div>
+<div class="category" data-key="leather-craft">
+       <div class="circle" style="--bg:#cfe3ff">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Leather Craft" style="display:block;text-align:center;">
+        <img class="icon" src="baa30f42-d285-4af1-a703-572a4ee2a13e.jfif" alt="Leather Craft"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+      </a>
+      </div>
+       <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">Gaming controls </a></button>
+     </div>
     
-        <p class="description">
-            Cute and compact mini chair-style mobile stand. Perfect for watching videos, attending online classes, 
-            or video calls. Lightweight and portable, available in multiple colors.
-        </p>
-        
-        <p class="price">20 Rs</p>
-        
-        <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-       
-    </div>
-</div>
+     <div class="category" data-key="clothing">
+       <div class="circle" style="--bg:#cfe6ff">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Clothing" style="display:block;text-align:center;">
+        <img  class="icon" src="IMG_20250930_160706.jpg" alt="Clothing"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;" >
+       </a>
+      </div>
+       <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">USB Light</a></button>
+     </div>
 
-<div class="card">
-    <img src="IMG_20250428_160817 (1).jpg" alt="boAt Rockerz Sports 6" class="card-image">
-    <div class="card-content">
-        
-        <h2>iPhone Apple Data Cable</h2>
-        
-        <p class="description">
-            Premium quality Apple lightning data cable for fast charging and smooth data transfer. 
-            Strong, durable, and designed for long-lasting performance with all iPhone devices.
-        </p>
-        
-        <p class="price">150 Rs</p>
-        
-        <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-        
-    </div>
-</div>
+     <div class="category" data-key="shaster">
+       <div class="circle" style="--bg:#e9f4c8">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Shaster & Accessories" style="display:block;text-align:center;">
+        <img class="icon" src="data:image/jpeg;base64,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" alt="Shaster & Accessories"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+       </a>
+      </div>
+     <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">Earfone </a></button>
+     </div>
 
-      <div class="card">
-    <img src="d3afa4db-d794-4b0f-b13d-2e970a284286.jfif" alt="boAt Rockerz Sports 7" class="card-image">
-    <div class="card-content">
-        
-        <h2>M19 Airpods</h2>
-    
-        <p class="description">
-            High-performance M19 AirPods with premium sound quality and deep bass. 
-            Comes with long battery backup, comfortable fit, and wireless freedom for music and calls.
-        </p>
-        
-        <p class="price">300 Rs</p>
-        
-        <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-     
-    </div>
-</div>
+     <div class="category" data-key="leather-craft">
+       <div class="circle" style="--bg:#cfe3ff">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Leather Craft" style="display:block;text-align:center;">
+        <img class="icon" src="IMG_20250428_160755.jpg" alt="Leather Craft"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+      </a>
+      </div>
+       <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">Moblie Stand</a></button>
+     </div>
 
-<div class="card">
-    <img src="IMG_20250428_160853.jpg" alt="boAt Rockerz Sports 8" class="card-image">
-    <div class="card-content">
-        
-        <h2>Phone Stand</h2>
+     <div class="category" data-key="leather-gatra">
+       <div class="circle" style="--bg:#dff6ff">
+        <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Leather Craft" style="display:block;text-align:center;">
+        <img class="icon" src="https://saboocomputers.com/wp-content/uploads/2022/06/HP-16-GB-2.0-METAL-BODY-PENDRIVE-1.jpg" alt="Leather Gatra"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+      </a>
+      </div>
+      <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">Pen Drive</a></button>
+     </div>
 
-        <p class="description">
-            Sturdy and lightweight phone stand, perfect for watching videos, video calls, or working hands-free. 
-            Compact design makes it easy to carry and use anywhere.
-        </p>
-        
-        <p class="price">50 Rs</p>
-        
-        <button><a href="https://wa.me/c/919315004071">Buy Now</a></button>
-    
+     <div class="category" data-key="fabric-gatra">
+       <div class="circle" style="--bg:#ccffe6">
+         <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Leather Craft" style="display:block;text-align:center;">
+        <img class="icon" src="https://www.bbassets.com/media/uploads/p/l/40322222_3-boat-rockerz-255-pro-wireless-bluetooth-earphones-active-black.jpg" alt="Fabric Gatra"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+      </a>
+      </div>
+       <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">Bluetooth Earphones</a></button>
+     </div>
+
+     <div class="category" data-key="kaur-accessories">
+       <div class="circle" style="--bg:#ffe9c8">
+         <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" aria-label="Leather Craft" style="display:block;text-align:center;">
+        <img class="icon" src="https://m.media-amazon.com/images/I/41qHuvKsfOS._AC_UF1000,1000_QL80_.jpg" alt="Kaur Accessories"style="width:180px;height:180px;border-radius:50%;object-fit:cover;display:block;margin:0 auto;">
+</a>
+      </div>
+     <button class="label"> <a href="https://wa.me/c/919315004071" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;display:inline-block;padding:6px 10px;">Mobile Pin </a></button>
+     </div>
     </div>
-</div>
-       <div class="card">
-    <img src="banner.jpg" alt="boAt Rockerz Sports 4" class="card-image">
-    <div class="card-content">
-        
-        <h2>MORE PRODUCTS LIST</h2>
-        
-        <p class="description">
-           We offer a wide range of high-quality mobile accessories including earphones, chargers, USB cables, memory cards, covers, and more. 
-            Explore our latest collection at the best prices!
-        </p>
-        
-     
-        
-        <button><a href="https://wa.me/c/919315004071">Chick Here</a></button>
-        
-    </div>
-</div>
+  <div class="view-all-wrapper" style="text-align:center;">
+    <a id="view-all-button"
+       class="button view-all-button"
+       href="https://wa.me/c/919315004071"
+       role="button"
+       aria-controls="categories"
+       aria-expanded="false"
+       style="display:inline-block;
+              font-family: Georgia, 'Times New Roman', Times, serif;
+              font-size:20px;
+              padding:14px 28px;
+              border-radius:8px;
+              margin-top:50px;
+              background:#e8f6ea;
+              color:#145214;
+              border:1px solid rgba(20,82,20,0.12);
+              box-shadow:0 2px 6px rgba(20,82,20,0.06);
+              text-decoration:none;">
+      View All
+    </a>
+  </div>
+    </section>
+
+<script src="script.js"></script>
 
  </section>
                  
    <!-- Gallery section -->
       <section class="gallery-section" id="gallery">
         <h2 class="section-title"id="printing">Printing</h2>
+        
         <div class="section-content">
           <ul class="gallery-list">
             <li class="gallery-item">
@@ -428,16 +437,11 @@ Thank you for choosing Tirath Telecom. We look forward to serving you!
             <li class="gallery-item">
               <img src="e3f62c86-a1cd-4400-af90-f493a75ebed4.jpg" alt="Image" class="gallery-image" />
             </li>
-            <!-- <li class="gallery-item">
-              <img src="images/gallery-4.jpg" alt="Image" class="gallery-image" />
-            </li>
+           
             <li class="gallery-item">
-              <img src="images/gallery-5.jpg" alt="Image" class="gallery-image" />
+              <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSEhMWFhUXGBcXGBcXGBYXGhUYFxcXFxcZFRgYHSggGBolHRUVIjEhJikrLi4uFx8zODMsNygtLisBCgoKDg0OFxAQGi0fHR0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rKystLS0tMi0rLf/AABEIAKgBLAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAQIDBAYAB//EAD4QAAEDAgMFBQYDCAIDAQEAAAEAAhEDIQQSMQUGQVFhEyJxgZEyQqGx0fAjUsEHFDNicoKS4aKyFUNTYyT/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAjEQEBAAIDAQACAgMBAAAAAAAAAQIRAyExEkFREyMiYZEE/9oADAMBAAIRAxEAPwDCUijeytq1KfsutyNwrFfdV7fde3xBj1iPiq9LYVY2YC7wBPnaVgvTT7P3jB/iNjqPotLg8W14zNII6LzkbPrtIlh8rrR7qVnBzmOBEibiNE4WmwpuVhrlTpPVhj1eiWmPUrXKqFICloLWdOa9VgnSmFkPS5lACnAoCUPTs6hBTpQSTMlBUYCeEA4FdKSEiAfK6U0JUA8FLKYCnBMHApZTQuTB4SpqWUAoSpFyAVcUiSUAq5IuQCpJXJEAqRdK5IOSJU1AA6UqQ4djruY0nnAn1UoZyUzKa546KHu2PSOgI8HH5GQq1fdkG7ahB6iflCPsYngLSJZh+x8S3RzT4G/o4R8VDNemHZ2FxAs0CT4nKSAFp8TWyi13GzRzKjpMiQLuN3H74LSf4zdRe+mP2Tt57nPbWZBBtlEd3qHHWUYZtNnEkeII9Cj7cI2LgHnIVTGbOwwbL2taOYOX5Qp2fzFWjiGuuHAz1CsgrG7TxVFpJpEhoNy+CD/TxP3ZC8DvXlrNAdmBMETrb0b96KfuD+Prb0kJ7QgOH3ipu1a4ehRvDVQ9oc0yCrllZpoSgJpaYsUonomR4TwoXOI6qyyk6JhBmFIU9zDyKYUgQFOCSEoCYKE8JoXBAOSFdK5MHBKmpQgHBcUiQoBZSLiUgKAeuTV0oBUi4lJKQKuSJUByRKU1AVqdNSgJWhMxOIZTGZ7g0DiTCzxx31GtqUBVsbjW0xe7jo3ifoEMdtOtXthafd/+1SWt/tGrvK3VW8BsRtM56jjUqHVztB/S3QLT5mPv/E7347C0XvOd1iePIcmD9SiLKYaEMx23qbJaz8R4OUgaA8if0CxG8m805s1Qu/kbGRgHM8/U9OCzyy33VY4/prtqbzMpktptzOGpMho8+Kw+2NvF5JdUmdBmOURrlE/fMrI7X3gqO7rHAC2mnTXU+PlCDOxDi4kmZv4Hj+iz3a1mMgrtLaDnmziRz0meAHAKrhH5XNI1zD5qpnhWsER2jJ0zCUlVsMLijK9B3ZqzRHQn6ryyhVuvRdzKs03Dk79FeHrkrTtKe0KEPA1IHCT1RPDU2gSCD1W6SUcPFzqp0q5MEUNeo0aiUtetl8eX6noqMk3N/gP9oCwCw8CE84bkU6hTi51+SkLkgrPpkKNM2hj+zgRJPDkEyli2PEg+XH4I0W4mSpgCUIPaRcmQllBnpqR14+5VTE7UpMsXAnk25+GiNnJtbc4ASU2mZg8PmgWM26xwgU3ETxIbp4Sq9XbdZ1hlZygSY8T9EtrnHWoUVTFU22L2jxIXn21Npmnlc8kh2riSSOqjxNeLzwt5pXJf8P8At6Q1wcJBBHMJxXm2H2g9hsSD0JRzBbzPFqgzDnofoUvpN4rPGsldKH4Pa9GpZroPI2P+1eKpnZosriU2UkoICacdX0DcOzr33ny0HmVdwmwaTSHvzVn/AJqhzQf5W+y30VzG41lJuZ5gchck8ABxKzG3N4HQHCp2NJvtOMS4/lm8eAk+CWXLfPGkwaDaG16dIOuHPaJyAiTyn8viVkdt71OEZ3ZOPZsMud46GOpgeKxe2d7wCW0pbJkvIGd3UNPsnq6T4LIYvaJeTExeSTJd1cdSVju1rMZGu2xvESCC7I0z3WHvHmHu5HkLeKyWLxZe6ZgcG8gFRNWFGakomKvpbfWnhH2fqkL9FWzqVjrJ6La0CrLX6xyKp03KwH/JSY3hiTEamF6HuK9wDw4Eeyb25rIbqYSpVpMbSYXPdnJI1gPIAnkAB6ra4HdDFC+dzDA0IH+U3K2xw/LkyrQ4pwIAkag+ioYrHtpDMXEeGp8FPhN3arTL67TwuJI9IT6m61F5zVaj3nkIaPKZW0iKzrN7sQH5hUcW/kOQj1IzfFFsHv0XGHUZ6tJ+UK9W2ZgsOzM6mIkDvFzrkwLacVE7eHB0hLHU2/0Mkz/aJlOYbHf4F8HtBtYSKdUeLSPjorbYBn5kfogGA223EPc1ubu6kxzi0FLtXGupNBa2STGsR4q5w7umeXLcfY0DsW0cVUxO02tEmw5kwhmDxBewOIgmfohWO2VQNQ1HuMnhPMZbRccdOaf8ciZy3IQO06dR0MyOIEugZoBmJJnkhtXeUmRTp1Drwyi08vAqTC1qLSTTaSS1xmwzRBIA1m7eHFNfWqm9OkB3gL+8I9qeSr5ha77UcFtqvUeC5mRs8Znpfx+7rchwseaxFahXzBxLQBEi148PH4LQYmocrCD7o+Cx5V8ftGpVDa+1mYdsukuPstGp+g6ofiNu9nT/ADVDYDl1csltKs5xL3vlx4nh06BYXJ28fFcvVraG81erY9xp91pifE6lRUMQAOCw+39pEXBgg8FDS2+coup265xydNzjdpgaFZ/G7wnt2ibNY79FnsRtfiSgbsaXOc6egR2eXzGhxW3S+qWuuCMrRyNlpK+KBqMpzZrQXHo0fMmF5/s9wdUa4+73vTT5/BHcHWkuv7Rl3Ro0b5lDNq6WIzy70HTh8FZ7cLOfv+W3HU/7U9Gu4/7RRBwV0TwG261OwdI5OuP9LN0HFWzUA++SnwXGX1usBvHTfAf3HddD58EXzcl5S6vdWsPtaswQyo4DlKqZ38scuH9Ku0N46dKQxxr1Llz3OJYDxl3v/wBLYHVYXbW3alV0l+YjQ6BvRjdGjwQzGY11TXTgBZVc6mY/s9pc/EphrKNzlGTdXpOz8yXMo5TkBIHKZrrKuCpKZSC6xytYTDPqvbTptLnOsANSmbG2dUxFQU6YueJmAOZj7K9n3c2FRwDAGjPWfALol7j+Vo4Dp6niiY7GWek25GwjgWsD3A1C6XAaMDhBAPG91rdpYpzGlzRmI4SshtnajKBNNz8+IfBytu2i0EG5Grz8ulzpa1bNRFVoklgeB4iSLea6cI5vyz7dt4uqSKdMN1gkTe/EmOHxHinNwGNeWl9bI2TmEiYkx7Ig2jjqpe2xLhLWBruEgRwgyTPProuZgsQ5vfqd6ZkE6WkRYaj0K300uos4nD0xhxRq1Bp7RNyQZDr8UKeMDSzwzNEEwC6IiIJ0ByiwPBEDsan3c7pIEDQTrPU+1Gqt4fZtFkltMSdbT80MfvGKOztoB7g1lPK2Ik+EgCB05q7tFjnUyGa2+d48pUxHKArFKA1Peu2GWsqH7OpvbTyv1Gn3zTn4RjzLhJHU8Jg+Ikq2986KNhS3vtGteHUKDeAAjlZSOotAmJ6ymhyq18X3Y43WWV7dHHJpTxjgTb7CXFV/w2Rc3AHmq1ezgJ4GVU2ptQUKObjmcB5gFZ5XeJ44/wBugHGbQZScQ90vvrwWd2ttzNpxQXebaxe/Nq6TpxQKti6jrBj/APE/Rc+tvVmUxmnbXxxd6qjSxZAhWKexsVUMii+OZGUeroRRm5WMOjGf5tWkkjC5ZW7AamKLrSpCICNDcTHTPZt/zaiOD/Z/iT/FqU6Y6S8+kAfFHRTYHsUTm+7cVp9nYCplBaDJvJ+f3KNbL3Yw+FB1qu1l0R5AcPFXKr5toOSmtJLoHwuCaOEnmeaJU6fP6KTT6phqjxS2uQpdBsEytUI1TS6U17Z+z+qk9G9p9/VStcoOzSdognm5eo3OSSmrTTm2dMpJXBcEw5xTmlNKSUEkaUY3f2FXxb8tFoPCXENbOsSdTF4HBWtzt1n4x8ultMcdM14gGDA6x0F9PY9kbNpUQ2jh2MDg0gu0ytmXFzvdbPE3McSjWyuWlPdndwYFgps/HxDyTIEAWAseDQNXHmecKrvDvOMLmo4d4qYg2qVx7NPmyiPm75n2au9G9oaHYfCOJBtVr6Oqfy0/y0xfx9S7DFV4wyy2s4Wse0DiSSTck65rH5r2fc/EdphGXu0lp8++P+0eS8OfVDeIHKSG+hNpXrf7OcTmpPbcTDwDGnkSPeGi0xGI7ijiHZhTDGkOs518zI1gaGfgoqmya1T267hrZgy68NeAVjGur5vwywNgXcCSTJny0UeHw9XM01K5NxZoAFp+F/gNFqtF/wCKo0zndcgggucTBsBHoAojt+ibMJeeTATy+o9VPjMJQpgtfcOMjMZmJIgcYupsNTYGgsAAItAixVb/AGxywMw1bO0Oyls8HWI8VZaGxdNqQNSkqGyEfOkVfFwNICoMxxJsmY+oXWboo6DUtpsT1cVAlxgczwQnae8tCkBmcSeGUST4KxtRs03Dp8r/AKIHszC/jmtDTDAAXH2ImSBzNkssZ8/RcWWWWcwl1C4reKWksbHPNMyb3HApzMB+90was5GuDgAcuexbB6d74IZvRhCJq5sxcBMDKLTw80mH2uWtDRpAjyWPLnPmdevQ4P8Azf2W73oXr4CqxsUKOGaOAkyfPKhTNqFtQ06lMB/HQgc/EK07apEEnQgrH71Y6cVmnVomPP8ARc8rt5MbBja+1btjTW1hAB/UhRYPaUi2hGYeI5eoWTxOOJgE2Ciw+0nCByt8ZH6Js7e27O1zz+9R8ymna08Vi241x+/JTtrlKrjTVtpnmomYuDJv99Vn/wB6KR+LPNEFrS1MXIm0KNuIbzCzLsS48bKehX6wPmkNtMyuPFPdiOSBUcSpnYoHRJS5VxN1D2nj9+CgbVHFI7EAIJhUpTVxWzjOCe1RtVihSc5zWNaXOcQGtAkkngAkRhavQdyv2eOqD94xbSGWLKfF3V44Dp6ozuV+z4UiK+LguF2ssWs6ng53wC2GLxoIcGP7OnT/AItY3DJjuNB/iVTaG8JvwBciLkgwWCYwGjhw1oaJqPcIaxoFnVCIGkw0fABZjeneNpacNhS7sp/EefaxDubv5LWbp0gAKvvBvC6qOxpA08ODIZq6ofz1naucdY001IEZwrTWmOWWzEhHIE/0wSP7ZkpXVGjUtGlnODJ6BzrSqdV02rMLRaBVpB7epbUpQ4eJRpML2kmzudmuLD50awyuPWV6Z+y2oA7KRBLIjLkNiRdoMaFunJed0qZcLElvPM3EMAjiXd5g6BavcPGCnXYGgNaHiw0OcQT6gJxpj69Nx73ATnay9y6ORiCbTMIQ+mHOk1qj+OVgJGkROkQfiekHtqscGOLGB7tWtOh+wUJ7DFPAlzaQvZt4BHzBnQ8lvjemmh2rsxlZgc5t40dfnw80NxOSiwF9SG+yA0R4ARPJEsLiW0mNa5xPCTcnzUZyw4AD83rJss5bBYq1cLSsSMxHF1/moKuLboHBUcbWdrx+ACEGsSb6laWJ+bRZzuK6m8KjTLuakoOi7jbrZSxyxWMQJBGsoY3BFrGwYJIBMxAvIvrp6oq1j3Xa1x6xlHq6AfJJR2aSYc5om8CXH1MAfFTcutFxY/OX1oFxdJsEHO4QQevIk/RZarsas6RSiQC6J9kX4r1ajsSn70u/qNvQQFmt/wAnDNp9m4sY6W5GANki826HRY5607MeTO5TVeW18VWGroHgPqhOJqyZLsx6o1tBtR7XObTdlbqSI+ayOJoOzGRdZYurLO+LfaSkD2jU3VMSAozBVaZfVFWYhvMeqmbXBFjKGYZki6fQYQS3zCWl7ogHlJc/QfVVsplSNqCcpJBRoWpnGB3iB0UlKTcD1sB9U2kGgzAnmbqcPnX6BI5TmW0PmnZ+CY4pudJW1gVOqcH/AHdVMyTOlobjPhcSuCJbC2JWxlUUqDZPEmzWDm48AtXIrbPwlStUbSpML3uMBo+7DqvadzNzaWCipVObEFtzwZNiGD4SrO7O7mH2dT7kPquHeqH9OTeg/wBqziMa3L21RzhSNm5bVMSR7lHi2mONT0PFVIyyyT47FiHOdU7Og0w57bue6/4VDm+13e7B4gluM2ztY1y1oaKdJlqdJpszqfzPN5ceZ6zJtbGPrODnwA0ZWU2+xSbwaweknj8EKe2FpMdMMstoXDoq9V4b7Tmt/qOUHpmNh5lWnEaS2bSC9rCZ0AnU2MCLwh2IrPacrjVo/wAlamK1I3OjmgkegRoYw2q53vdpTB0ztbiKLv6XNGYDwCZhKQmKbY5nD1LDhL6Lrx4qSmwtEspwD7T8K8Fs/wA9MuIPgSrNRsCCQ53F2VoJHIhojlzSqkT40EHm6AC4ibkNtxV3Y9Qtfa1pHiIP6KllU+GeGOa484HWbel1M9OV7xs/EdrRpVfzMB89ChmM2g9wcKLCXMdDgbWki3z8PEKt+z3H9rhOz96k4tP9LjIPzHkiGKwgBLnuLWkknM8U28uhOi2xs/LeIcNhC8DtHy5pNpGkyJ9EfgQ0gdCs7hdo4VpLGVGkxcU2k/8AI6rQYGswt5DgHGSfJTlYeVA9p4Q5oaJm8AE+qH093MS8gwGj+b6BbmnDtFO1T90vtlsNusB/EqE9G90fX4ojQ2XRpAuDAIvmNz6m6KVM+aRGWDI94nhBmAEI3gxUNDOLtY5D6lRakLrYrOZvHLQJ2ye8XPItMN8Bx9ZQ6u4xlbq45R56nyElHsBSytAGgEBGIq2CAvMf2h4ztsayk3Sg2/V1SHfABvqV6TWqQ0uBEgE30HivE2Ys161aqTd7y7yJMD0AU8l6PD0TaARBvIi6yO0cK0vdawho8AAB8lpmGDqq2M2aKpkOyu8JB/2sY6ePKS9sXUoMB72kiY5TeFDUwQzOgyJseY4L0HZuy2UQfec7UkDTkByS/wDhMO4yaY8BIB8QFX0LnNge727VKpSa+pmlxJABgZZgHTjBWgw27mEEg0QbRJLifIk2KvhgBBHAQANI8FY8Uts7myW0t0Ga0ahB/K+49RcehWW2hsWvSdmfTdlEy4d5viSNB4wvURSaE4DpZPeh9vJG1IU7a6222N1aNWXM/Df0HdPi39Qsfj9lVsOYqMgcHC7T5/VVvasc4j7SU0lR2TD4oabSmom5lHkKTIUF2s7r7tVsa+Gd2mPbqHQdBzcvati7Mw+BollMAWlziRLiNS48Bqn0cPQwdENbFOkwcdY5u5k/qqdQ5nNdWp5ie9RwptmE92tjPyskSGan5aYzbiyyOxFZtRjatZpNJ38Kj7L8SRxcP/XQFrnXloHCMY+pUealUhzyIEWaxo0ZTHutCL1KLi51So7PUd7T4jwa0e60cAqdait5jpzZZbB6jOio4vuDM5j8t5LW5ogE6TfSPNEMbWa2QHUw4RZ7gBcwJuNbwJEws3tGsM5NWliMK6SW1aLi9pni9ouBYfmRRjNoKtTtrMfQri00qrTSqi3DTM7wkJGuFIBgNahPuVGmtSBnhAP/AFHilGaoCPwcWNQWxTq+YAnzc1XNn0Mjc34kOBHYve1wYR0v/wBRKhqYygKZzFrBW0LmNgFpveSelk3KpXNnXVLTokmPsJaLZjGiJNgNULxWIL3ToOA5BTbSxYccjfZH/I81SCmqxn5aPB7yGkHObUq0nOEP7OId/wAhChG1nO7zgSTp2ji6BwsIQKi3MZ91vxP0CtGXENaJJsAj6qmi3ap18ZXDA9zaYu/L3RHLu6r2fZuFDWgAQAICzm5WwRhqLWx3jdx68ls6DEopYoOgKVzgYngZ9PufJRAJUwjwtEUmnvudxlxmIH2SVk8Vie0e5/A6eA0RnePF5KeQav8Alx+iy9SvkaTy4czwHqotVFzZ9Mvqk+6zuj+o3PwhaNjbIFganYNpAse8vcGuLBmyl0kufxyzaUcLgtJE1nP2h7TNHBVMph1SKQPLN7X/ABDl5hsagcpeAYJgeDbIz+1vaBdXZQi1NuabXNS3wDfiu2HvBhG0WUXsLS0QSDBJ4ktcI1K5+S7umuM1Nq4aRp8UrGXkwP1Wjo0sHV0qgHhnGX4iyjxOxDmAZ32n3mw4fDRR2NgVR8WUlOsQLhX8VsZ7dWofUw7hbRMtn0614mEZ2fhHVQS0TGsIGXRwRXCbz0sEKbHNLu2uMpAIvA18VWM2i1aqbOcNQVA7DEaI6/eSno8OaOOdpt5xB9Vcp0qNUSwtd1Y6fgquAZQ0uiZUohwIcAQeBvK1FbZI4H1BHxH0VWrsl3KfAgqfmwnn+P3PoPk0yaZ6Xb/jw8lncduriWTlDag/lMH0d9SvUcXgnN1aR5INXqgGJU/VipyWPL61Coz22Ob4ghRduvTziGgS5wAmBPHoOa52zaTrmmw/2A/on9LnKLUaVR1QPqtDsQIdTpOvTwgNxUxH563FrOGp5oxhsEGA3LnuMvqOu57ubj+mgUmCwbKLcrJ1JcSSXPcblzybknmp13yacOV2o1KaCbbxlOgD2j8ndc7NlJa0DieGpFhc8Ai22Nq08OAXh0GSXACGBokueXEDoAJJPBef4raFev3sHiaWKZBzUawJe4kkklrocP7MoEItKY7MxdatXBilh8dRgewQ2qDGstADTqbt4oRh6rKTi2lWq4X/APHENzU/+UtjqYUVf93zBz6NXBVh79MuLJ6Ft2+h8Ud2aa1a1WrSxNEiznND3jzBDv8AKVHrTxXobOzHPWpUQ4EOY+mXQ7rHeBPmArz2FxJMX5W9EQOG06CALWA00TThr81UxZ3LYcaF1R2zigwdk32j7ZHD+X6oxtbFDDUwbdo72ByH5isY4kmTcm5U59dLwm+zFzpJyjU6nkOa6q6B1UlCnlF9Tc/RZNUjSGiBoFuf2b7Azu/eagsLMB581k9gbLdiq7abdJlx5Be77HwDabGsaIDRARDEcJShEGBRUmKcJgq4lchO8eM7OllB7z7Dw4n75pHADaeL7Wo53DQeAQmpVzVm0xfKM5HwaD8T5BWcwAk6C6k3ewkg1XDvVDPg33R6Qlj3VUcwFJ0AuN9Tp8FPj8QKbHPMwBJi8AXJUlMWWd3/ANp9jgqoBhzx2Yvxfb5EnyKu1LyPG4ypjMW5w77nvLhPdBaBDR0hoCgqsNSsykRlIOV1wbyXPMi3NO2fgnB76oMso3LmmOFsvmE7YxOarWNyBE/zPMn4fNTxyauVPPK7mMSYHFVqRLWiWjQOn4FHdn7eLTcOYebTP0KGUXOe5lNozZjYRJV2vQDHZXtcD1H0WFU0VPeYlpl4fAJAfx6Xukpby4V9qlJ9M82nOPSxWdbQzexB++KtYfYznahOdlRuph6FQTRrUyeDXHKfMGF53vLtLtMW94PcZ3Wt4WsI85K3uH3caRdBt/NiUqWEc6wcSMpjSLm/gD6rSYpl7ZfDbVqshzajmgyIDjr1vHwVihvFXh9TNROXg7M17hpLSyPis5sjBOruhroa0S49OAA6q5X2Y8TDpHKACi9Lla3Zn7RKzYl1QDkS2oPMOAcB5rZbP36a4DP2biYHvUzJ/qkfFeNlpzAvaW8+It15Inhq+jm3IPAmBOtgQD5yp2LI9jr72YVgDa2elmmMwzA84LCQvL6m1muqO/EaGyY9omJMSAOUcUA2zjXOkyL2b0HEqjs2hUfUyNseJ5DinrfqbHqW5uHo1872y5zIBc4ZshM+w02A6yStR/4Q8HMI8x+iyW5uMpYRhaQ+5m0HzIMGTqtZS3hwxH8QDoWuS+N+o2JNamVi7guXLsczFbVwu0qRD8LiQ4CS6nWBeKhJk5i+QOQDQ2BpCyO2cTh6p/8A7MCcLX/+2HH4bjzLQbHzcVy5TlFYZd6W9itrvLWsxTMRR0IqAVHAeDiKg9QFrsNgMrQ0CGjRo0E8hwSrk8Bye6WBhVFjRTw9N1ar7I0HF7uDQuXK8rqJxm68z2ljn16jqj9Tw4NHADoFXmAuXLnrpkMojMc504fVTGSQ0XJsFy5TTj2HcPd793pAuH4jru6cgt5hqULlyrWhVxoTly5IOWH2zje1rEj2W90eWp9Vy5TkqBWM7xbSHvm/9Iu79B5rUYBkBKuTxFXgV5b+2DEjtaNIE91rqjhJ4w1ltODly5Gfh4esdULG4RozAvc8kthvcDRz1BJPpKs4ekWUabeNSXu/us2fJcuVZdcUiJ3nV3ZVHPXGoDRmJHAzZa6nmP8A7M38rwHf9r/FcuUYyaUc3BMcZdSDTwcwkeNjPzRGhg2iMtaOj9Pj9Ui5aTCaLa7Xc9jS7IHjhkMyfBYXeonGNdhqffryM092lh2i5a5+mc2FpPgFy5Z0zMBu9TwmHDBBeRNRwM5ndOg4IHiKIkwkXLK3sKz2Ecih2Pp2MNh3NcuRAp4WgC45+9Fp000RXYYYx9VzhAgET7x0I+S5crnoqPG7YLSbyTJHADohbtsvNzVIPIGAkXLSCR//2Q==" alt="Image" class="gallery-image" />
             </li>
-            <li class="gallery-item">
-              <img src="images/gallery-6.jpg" alt="Image" class="gallery-image" />
-            </li>
-          </ul> -->
+          </ul>
         </div>
       </section>
 
