@@ -26,6 +26,9 @@
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+
+
+
   </head>
   <body>
         <!-- Header / Navbar -->
@@ -56,6 +59,14 @@
           <li class="nav-item">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
+            <style>
+              .nav-menu .btn-navy:hover {
+                background-color: #1d3557 !important;
+                transform: translateY(-2px);
+              }
+            </style>
+            <a
+                            href="tel:+919868459342" class="btn-navy rounded-full text-sm font-bold px-4 py-2.5" style="position: relative; top: -5px; display: inline-flex; align-items: center; gap: 6px; padding: 10px 16px; background-color: #14213d; color: #fff; border-radius: 9999px; text-decoration: none; transition: background-color 0.2s ease, transform 0.2s ease;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 text-blue-400" style="width: 14px; height: 14px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg><span>Call Now</span></a>
         </ul>
 
         <button id="menu-open-button" class="fas fa-bars"></button>
@@ -68,6 +79,7 @@
           position: fixed;
           right: 24px;
           bottom: 24px;
+          margin-bottom: 10px;
           z-index: 9999;
           display: inline-flex;
           align-items: center;
@@ -87,13 +99,13 @@
 
         /* Responsive adjustments */
         @media (max-width: 600px) {
-          .whatsapp-fab { right: 18px; bottom: 18px; width: 50px; height: 50px; }
+          .whatsapp-fab { right: 18px; bottom: 38px; width: 50px; height: 50px; }
           .whatsapp-icon { width: 24px; height: 24px; }
         }
 
         @media (max-width: 420px) {
           /* smaller phones: slightly smaller, less intrusive */
-          .whatsapp-fab { right: 12px; bottom: 12px; width: 44px; height: 44px; }
+          .whatsapp-fab { right: 12px; bottom: 32px; width: 44px; height: 44px; }
           .whatsapp-icon { width: 20px; height: 20px; }
         }
 
@@ -147,7 +159,7 @@
         <div class="section-content">
           <div class="hero-details">
             <h2 class="title">TIRATH TELECOM</h2>
-            <h3 class="subtitle"> All types of services and mobile accessories available</h3>
+            <h3 class="subtitle"> All Types of Services & Mobile Accessories Available</h3>
             <p class="description"></p>
 
             <div class="buttons">
@@ -211,126 +223,149 @@ Thank you for choosing Tirath Telecom. We look forward to serving you!
     <li class="menu-item">
       <img src="moratoriumloan-1604566614.jpg" alt="Money Transfer" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Money Transfer</h3>
+        <h3 class="name" id="name" style="color: black; text-align: center;">Money Transfer</h3>
         <p class="text">Yahaan se aap aasaani se bina kisi dikkat ke instant paise bhej aur prapt kar sakte hain. 
     Sabhi Bank aur UPI (Google Pay, PhonePe, Paytm, Bhim etc.) supported hain.</p>
       </div>
+      <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Money Tranfer Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="Vande-Bharat-scaled.jpg" alt="Railway Ticket" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Railway Ticket</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Railway Ticket</h3>
         <p class="text">
     Aap yahan IRCTC ke madhyam se apna railway ticket turant pal book karwa le sakte hain. 
     Sabhi train class (Sleeper, 3AC, 2AC, Tatkal, General) booking suvidha uplabdh hai.</p>
       </div>
+     <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Railway Ticket Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="download.jpg" alt="Air Ticket" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Air Ticket</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Air Ticket</h3>
         <p class="text">Domestic aur international flights ke liye sasta aur turant air ticket booking suvidha uplabdh hai.</p>
       </div>
+       <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Air Ticket Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="fivestars04_s.jpg" alt="Bus Ticket" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Bus Ticket</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Bus Ticket</h3>
         <p class="text">Har route ke liye bus ticket booking yahan se aasani se Karwa Sakte Ha.</p>
       </div>
+       <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Bus Ticket Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="images.jpg" alt="Hotel Booking" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Hotel Booking</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Hotel Booking</h3>
         <p class="text">Apni yatra ke dauran sasta aur suvidhajanak hotel booking ke liye yahaan sampark karein.</p>
       </div>
+     <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Hotel Booking Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="117939994.webp" alt="Mobile Recharge / Sim" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Mobile Recharge / Sim</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Mobile Recharge / Sim</h3>
         <p class="text">Sabhi operator ke liye mobile recharge aur nayi SIM service uplabdh hai.</p>
       </div>
+       <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Mobile Recharege /Sim Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="images (1).jpg" alt="Gas Bill" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Gas Bill</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Gas Bill</h3>
         <p class="text">Yahaan se aap apna gas connection bill turant aur surakshit tarike se jama Karva Sakth Ha. Hamare yahan se **Gas Bill Book** bhi hota hai — Bharat Gas, Indane, HP Gas sabhi ke liye seva uplabdh hai.</p>
       </div>
+       <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Gas Bill Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="images (2).jpg" alt="Water Bill" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Water Bill</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Water Bill</h3>
         <p class="text">Hamare Yahan per pani ka Bil Jama  kara jata hai</p>
       </div>
+       <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Water Bill Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="images (3).jpg" alt="Electricity Bill" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Electricity Bill</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Electricity Bill</h3>
         <p class="text">Sabhi rajyon ke bijli bill payment ki suvidha ek hi jagah par uplabdh hai.</p>
       </div>
+       <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Electricity Bill Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="images (4).jpg" alt="MCD House Tax" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">MCD House Tax</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">MCD House Tax</h3>
         <p class="text">MCD ya local authority house tax payment ke liye yahaan seva upalabdh hai.</p>
       </div>
+      <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom M.C.D. House Tax Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="Smart_Card_-_Pan_1.webp" alt="Pan Card" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Pan Card</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Pan Card</h3>
         <p class="text">Naya PAN card banwana ho ya correction karana ho — sab yahan se possible hai.</p>
       </div>
+      <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Pan Card Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="Blog_Paytm_Driving-Licence-Status-Steps-to-Check-DL-Application-Status.jpg" alt="Driving License" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Driving License</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Driving License</h3>
           <p class="text">Naya Driving License banwana, renewal, duplicate, ya status check karna ho to yahaan se aasaani se karvayen.</p>
       </div>
+      <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Driving License Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
     
     <li class="menu-item">
       <img src="https://thepassportagents.com/wp-content/uploads/2025/06/How-Many-Types-of-Passport-in-India.jpg" alt="Passport" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Passport</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Passport</h3>
         <p class="text">Naya passport banana, renewal, tatkal seva, ya application status check karna ho — sabhi seva yahan uplabdh hain.</p>
        
       </div>
+      <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Passport Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
 
     <li class="menu-item">
       <img src="Blog_Paytm_Driving-Licence-Status-Steps-to-Check-DL-Application-Status.jpg" alt="Driving License" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Driving License</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Driving License</h3>
           <p class="text">Naya Driving License banwana, renewal, duplicate, ya status check karna ho to yahaan se aasaani se karvayen.</p>
       </div>
+      
+      <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Driving License Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
     <li class="menu-item">
       <img src="Blog_Paytm_What-is-EPIC-Number-in-Voter-ID-Card.jpg" alt="Voter ID Card" class="menu-image" />
       <div class="menu-details">
-        <h3 class="name" id="name">Voter ID Card</h3>
+        <h3 class="name" id="name"style="color: black; text-align: center;">Voter ID Card</h3>
           <p class="text">Naya Voter ID banwana, correction karwana, ya status check karna ho to yahaan se aasaani se karvaen.</p>
       </div>
+     <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Voter Id Card Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
     </li>
-    
+      <li class="menu-item">
+      <img src="gst.webp" alt="GST File" class="menu-image" />
+      <div class="menu-details">
+        <h3 class="name" id="name"style="color: black; text-align: center;">GST File</h3>
+          <p class="text">GST return filing, registration, ya GST se judi anya sevaon ke liye yahaan sampark karein.</p>
+      </div>
+     <a class="menu-order" href="https://wa.me/919315004071?text=Hello Tirath Telecom Gst File Type Your Message." target="_blank" rel="noopener noreferrer" aria-label="Contact about Money Transfer on WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i>Contact on WhatsApp</a>
+    </li>
   </ul>
 </div>
       </section>
